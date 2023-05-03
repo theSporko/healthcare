@@ -1,0 +1,60 @@
+<html lang="en">	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='web3.min.js'></script>
+  <title>Healthcare Project Demo</title>
+  <html style="background-color:rgb(55, 55, 136);"></html>	
+	<div style="background-color:rgb(13, 13, 58);" class="jumbotron text-center">
+		<h1 style="color:mediumseagreen;">Health Record Storage</h1>
+		<p style="color:grey;">Here you can input, find, and sign healthcare records on a blockchain!</p>
+		<br /><br />
+
+<div style="background-color:rgb(55, 55, 136);" class="jumbotron text-center">
+<body>
+    <br>
+	<a style="color:rgb(8, 255, 119);"href="#demo" data-toggle="collapse">Click to add a new record</a>
+	<br /><br />
+<div id="demo" class="collapse">
+    <h4 style="font-family:'Geneva';color:mediumseagreen;"for = "lblEnterNewRecord">Enter a new record:</h4><br>
+    <label style="color:rgb(161, 161, 161);"for="lblEnterNewID">New ID:</label>
+    <input type="number" id="txtEnterNewID" name="txtEnterNewID" placeholder="12345"><br>
+    <label style="color:rgb(161, 161, 161);"for="lblEnterNewName">New Name:</label>
+    <input type="text" id="txtEnterNewName" name="txtEnterNewName" placeholder="Sam Bankman-Fried"><br>
+	<label style="color:rgb(161, 161, 161);"for="lblEnterNewDate">New Date:</label>
+    <input type="text" id="txtEnterNewDate" name="txtEnterNewDate" placeholder = "00/00/0000"><br>
+	<label style="color:rgb(161, 161, 161);"for="lblEnterNewHospital">New Hospital:</label>
+	<input type="text" id="txtEnterNewHospital" name="txtEnterNewHospital" placeholder = "Washington Regional"><br>
+	<label style="color:rgb(161, 161, 161);"for="lblEnterNewPrice">New Price:</label>
+    <input type="number" id="txtEnterNewPrice" name="txtEnterNewPrice" placeholder = "500"><br>
+	<br /> 
+    <button type = "btnEnterNewRecord" onclick="enterNewRecord();"class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Add New Record</button><br/>
+  	<br>
+</div>
+	<h4 style="font-family:'Geneva';color:mediumseagreen;" for="lblSignRecord">Sign a record:</h4>
+	<br /> 
+	<label style="color:rgb(161, 161, 161);"for="lblSign">Enter a record ID:</label>
+	<input type="number" id="txtSignRecord" name="txtSignRecord", placeholder = "12345"><br>
+	<br /> 
+	<button type = "btnSignRecord" onclick="signRecord();"class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Sign Record</button><br/>
+    <br>
+    <h4 style="font-family:'Geneva';color:mediumseagreen;" for="lblFindRecord">Record search:</h4><br>
+    <label style="color:rgb(161, 161, 161);"for="lblFind">Enter record ID:</label>
+    <input type="number" id="txtFindRecord" name="txtFindRecord" placeholder = "12345"><br>
+	<br /> 
+	<button type = "btnFindRecord" onclick="findRecord();"class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Find Record</button><br/>
+    <br>
+	<br /> 
+    <button type = "btnHospitalAdmin" onclick="hospitalAdmin();"class="btn btn-success">Hospital Admin</button><br/>
+	<br>
+	<button type = "btnLabAdmin" onclick="labAdmin();" class="btn btn-success">Lab Admin</button><br/>
+	<br>
+    <h2 style="font-family:'verdana';color:rgb(8, 255, 119);" >Status: <span id="status">Loading...</span></h2>
+	<br /><br />
+</div>
+</div>
+</body>
+</html>
+</html>
